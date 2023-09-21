@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+:root{
+  /* Primary Color*/
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(/images/bg-desktop.svg);
+  background-color: var(--Violet);
+  font-family: 'Open Sans', sans-serif;
+  padding: 2rem 2rem 0 2rem;
+}
+header{
+  margin-bottom: 2em;
+}
+main{
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.Img .img-svg{
+  width: 700px;
+}
+.Container{
+  color: aliceblue;
+  padding-inline: 3rem;
+}
+
+.Container h1{
+  font-family: 'Poppins', sans-serif;
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+.Container p{
+  margin-top: 1rem;
+}
+.Container button{
+  margin-top: 1.5rem;
+  background-color: aliceblue;
+  color: var(--Violet);
+  padding: 1rem 3.5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.Container button:hover{
+  cursor: pointer;
+  background-color: var(--Soft-Magenta);
+  color: aliceblue;
+}
+
+.SocialNetworks{
+  display: flex;
+  justify-content: end;
+}
+
+.SocialNetworks .icon{
+  border: 1px solid aliceblue;
+  border-radius: 50%;
+  padding: .6rem;
+  color: aliceblue;
+  margin-inline: .5rem;
+}
+.SocialNetworks .icon:hover{
+  cursor: pointer;
+  color: var(--Soft-Magenta);
+  border-color:var(--Soft-Magenta) ;
+}
+
+.frontMentor{
+  display: flex;
+  justify-content: center;
+}
+
+.attribution { 
+  color:var(--Soft-Magenta);
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 96%, 28%); 
+  text-decoration: none;
+}
+
+@media (max-width:1200px){
+  .Img .img-svg{
+    width: 500px;
+  }
+  .Container  h1{
+    font-size: 2rem;
+  }
+  .Container p{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:1000px){
+  .Img .img-svg{
+    width: 300px;
+  }
+  .Container{
+    margin-bottom: 1rem;
+  }
+  .SocialNetworks{
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width:750px){
+  main{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
+  .Container  h1{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .Container p{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .SocialNetworks{
+    justify-content: center;
+  }
+}
